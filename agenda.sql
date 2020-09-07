@@ -1,7 +1,7 @@
 -- --------------------------------------------------------
 -- Servidor:                     127.0.0.1
 -- Versão do servidor:           10.1.13-MariaDB - mariadb.org binary distribution
--- OS do Servidor:               Win32
+-- OS do Servidor:               Linux Mint
 -- HeidiSQL Versão:              9.4.0.5125
 -- --------------------------------------------------------
 
@@ -10,6 +10,10 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Copiando estrutura do banco de dados para agenda
+CREATE DATABASE IF NOT EXISTS `agenda` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_520_ci */;
+USE `agenda`;
 
 -- Copiando estrutura para tabela agenda.compromissos
 CREATE TABLE IF NOT EXISTS `compromissos` (

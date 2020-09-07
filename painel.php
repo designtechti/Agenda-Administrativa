@@ -26,7 +26,7 @@
 
 <body style="background-image: url('img/fundo.jpg'); ">
 	<div class="fundo">
-		<div id="topo">
+		<div id="topo" style="color: #22FAC7;text-shadow: 3px 3px 3px #000;">
 			Agenda Administrativa
 		</div>
 		<div id="menu">
@@ -44,7 +44,7 @@
 		</div>
 	</div>
 	<footer>
-		<h5>Copyright &copy Design Tech 2017 | Todos os direitos reservados. </h5>
+		<h5>&copy Design Tech 2017 | Todos os direitos reservados. </h5>
 	</footer>		
 </body>
 </html>

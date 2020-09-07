@@ -12,14 +12,14 @@
 		
 		<table width="100%">
 			<tr>
-				<th colspan="6">Compromissos</th>
+				<th colspan="6" style="border: 1px solid #f1f1f1; border-radius: 5px 5px 0 0; padding: 30px;">COMPROMISSOS</th>
 			</tr>
 			<tr>
-				<th>ID</th>
-				<th>Título</th>
-				<th>Data</th>
-				<th>Hora</th>
-				<th>Descrição</th>
+				<th style="border: 1px solid #f1f1f1; padding: 30px;">ID</th>
+				<th style="border: 1px solid #f1f1f1; padding: 30px;">Título</th>
+				<th style="border: 1px solid #f1f1f1; padding: 30px;">Data</th>
+				<th style="border: 1px solid #f1f1f1; padding: 30px;">Hora</th>
+				<th style="border: 1px solid #f1f1f1; padding: 30px;">Descrição</th>
 			</tr>
 			<?php
 				$sql = "SELECT *, DATE_FORMAT(data, '%d/%m/%Y') AS df, DATE_FORMAT(hora, '%H:%i') AS hf  FROM compromissos ORDER BY id";
@@ -28,7 +28,7 @@
 				if(mysqli_num_rows($result) == 0){
 			?>
 				<tr>
-					<th colspan="8">Nenhum registro encontrado.</th>
+					<th colspan="8" style="border: 1px solid #f1f1f1; padding: 30px;">Nenhum registro encontrado.</th>
 				</tr>
 				<?php
 				}else {
@@ -48,11 +48,11 @@
 
 				?>
 					<tr style="color: <?=$cor?>">
-						<td><?= $dados['id']?></td>
-						<td><?= $dados['titulo']?></td>
-						<td><?= $dados['df']?></td>
-						<td><?= $dados['hf']?></td>
-						<td><?= $dados['compromisso']?></td>			
+						<td style="border: 1px solid #f1f1f1; padding: 15px;"><?= $dados['id']?></td>
+						<td style="border: 1px solid #f1f1f1; padding: 15px;"><?= $dados['titulo']?></td>
+						<td style="border: 1px solid #f1f1f1; padding: 15px;"><?= $dados['df']?></td>
+						<td style="border: 1px solid #f1f1f1; padding: 15px;"><?= $dados['hf']?></td>
+						<td style="border: 1px solid #f1f1f1; padding: 15px;"><?= $dados['compromisso']?></td>			
 					</tr>
 				<?php
 					};
